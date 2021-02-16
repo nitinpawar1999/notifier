@@ -322,6 +322,9 @@
         <div id="reminderDropdown" class="reminderDropdown">
           <div class="dropdown-content">
             <h3>Reminder</h3>
+            <% if(reminderCount == 0){%>
+              <p style="margin-left: 10px;text-align: center;">No Reminders</p>
+            <%}%>
             <% userDao = new UserDao();  noteList = userDao.getNoteList(request);
             for(Note note:noteList){
             if(note.getReminderDate().toString().equals(date.toString())){ 
