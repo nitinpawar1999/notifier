@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:19 +0530] "GET /notifier HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:19 +0530] "GET /notifier/ HTTP/1.1" 200 889 http-bio-8080-exec-3 203
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:19 +0530] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:27 +0530] "POST /notifier/login HTTP/1.1" 200 953 http-bio-8080-exec-5 3146
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:29 +0530] "GET /notifier/views/register.jsp HTTP/1.1" 200 1582 http-bio-8080-exec-6 4
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:29 +0530] "GET /notifier/views/css/register-page.css HTTP/1.1" 304 - http-bio-8080-exec-7 8
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:39 +0530] "POST /notifier/register HTTP/1.1" 200 985 http-bio-8080-exec-8 132
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:41 +0530] "GET /notifier HTTP/1.1" 302 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:41 +0530] "GET /notifier/ HTTP/1.1" 200 889 http-bio-8080-exec-10 1
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:46 +0530] "POST /notifier/login HTTP/1.1" 200 12927 http-bio-8080-exec-10 219
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:46 +0530] "GET /notifier/views/css/dash.css HTTP/1.1" 304 - http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:26:46 +0530] "GET /notifier/views/script/dash.js HTTP/1.1" 304 - http-bio-8080-exec-2 3
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:29:06 +0530] "POST /notifier/login HTTP/1.1" 200 13017 http-bio-8080-exec-7 202
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:29:17 +0530] "POST /notifier/login HTTP/1.1" 200 13036 http-bio-8080-exec-8 148

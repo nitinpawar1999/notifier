@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+  <servlet>
+    <servlet-name>register</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/notifier/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/notifier/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>editUser</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.EditUserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editUser</servlet-name>
+    <url-pattern>/notifier/edituser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>registerjsp</servlet-name>
+    <jsp-file>/views/register.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registerjsp</servlet-name>
+    <url-pattern>/notifier/register.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>newNotebook</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.NewNotebookController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>newNotebook</servlet-name>
+    <url-pattern>/notifier/newNotebook</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>newNote</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.NewNoteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>newNote</servlet-name>
+    <url-pattern>/notifier/newNote</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>notebookView</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.util.notebookView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>notebookView</servlet-name>
+    <url-pattern>/notifier/notebookView</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>noteView</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.util.noteView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>noteView</servlet-name>
+    <url-pattern>/notifier/noteView</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteNotebook</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.DeleteNotebookController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteNotebook</servlet-name>
+    <url-pattern>/notifier/deleteNotebook</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>deleteNote</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.DeleteNoteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteNote</servlet-name>
+    <url-pattern>/notifier/deleteNote</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>editNotebook</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.EditNotebookController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editNotebook</servlet-name>
+    <url-pattern>/notifier/editNotebook</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>editNote</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.EditNoteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editNote</servlet-name>
+    <url-pattern>/notifier/editNote</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>editNotebookform</servlet-name>
+    <jsp-file>/views/editNotebook.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editNotebookform</servlet-name>
+    <url-pattern>/notifier/editNotebook.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>editNoteform</servlet-name>
+    <jsp-file>/views/editNote.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editNoteform</servlet-name>
+    <url-pattern>/notifier/editNote.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>viewNoteform</servlet-name>
+    <jsp-file>/views/viewNote.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewNoteform</servlet-name>
+    <url-pattern>/notifier/viewNote.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.logoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/notifier/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>viewNotebook</servlet-name>
+    <servlet-class>com.virtusa.notifier.java.hibernate.web.viewNotebookController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewNotebook</servlet-name>
+    <url-pattern>/notifier/viewNotebook</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <session-timeout>15</session-timeout>
+ </session-config>
+  
+  <welcome-file-list>
+    <welcome-file>/views/login.jsp</welcome-file>
+    <welcome-file>/views/register.jsp</welcome-file>
+  </welcome-file-list>
+
+
+</web-app>
